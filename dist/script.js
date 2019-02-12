@@ -12,7 +12,7 @@ class JogoVelha {
         this.player = true;
         this.played = [0, 0, 0, 0, 0, 0, 0, 0, 0];
         this.end = false;
-        this.wins = [448, 54, 7, 292, 146, 73, 273, 84];
+        this.wins = [448, 56, 7, 292, 146, 73, 273, 84];
     }
 
 
