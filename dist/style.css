@@ -1,0 +1,91 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(13, 128, 182);
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.velha {
+    display: flex;
+    justify-content: center;
+}
+
+.velha .coluna:last-child {
+    border: none;
+}
+
+.velha .coluna {
+    display: flex;
+    flex-direction: column;
+    border-right: 3px solid white;
+}
+
+.velha .quadro {
+    width: 125px;
+    height: 125px;
+    border-bottom: 3px solid white;
+    color: #e4e4e4;
+    font-size: 7em;
+    font-weight: 100;
+    text-align: center;
+}
+
+.velha .quadro:last-child {
+    border: none;
+}
+
+span {
+    user-select: none;
+    margin: 0;
+}
+
+#modal {
+    position: absolute;
+    margin: 130px auto;
+    font-family: inherit;
+    z-index: 3;
+}
+
+.posts {
+    background: wheat;
+    width: 200px;
+    padding: 20px;
+    display: block;
+    margin-bottom: 10px;
+    animation-name: show;
+    animation-duration: 0.4s;
+}
+
+.remove {
+    animation: hide .4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    50% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
