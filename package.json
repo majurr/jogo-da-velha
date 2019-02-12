@@ -5,8 +5,8 @@
   "main": "index.js",
   "engines": {
     "node": "11.8.0",
-    "npm": "6.x",
-    "yarn": "'1.x"
+    "npm": "6.7.0",
+    "yarn": "1.13.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
