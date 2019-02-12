@@ -1,0 +1,28 @@
+{
+  "name": "jogo-da-velha",
+  "version": "1.0.0",
+  "description": "simples jogo da velha",
+  "main": "index.js",
+  "engines": {
+    "node": "11.8.0",
+    "npm": "6.x",
+    "yarn": "'1.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marionascimentojunior/jogo-da-velha.git"
+  },
+  "author": "marionascimentojunior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marionascimentojunior/jogo-da-velha/issues"
+  },
+  "homepage": "https://github.com/marionascimentojunior/jogo-da-velha#readme",
+  "dependencies": {
+    "restify": "^7.7.0",
+    "restify-errors": "^6.1.1"
+  }
+}
