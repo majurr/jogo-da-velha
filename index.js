@@ -11,12 +11,13 @@ server.use(restify.plugins.acceptParser(server.acceptable));
 server.use(restify.plugins.queryParser());
 server.use(restify.plugins.bodyParser());
 
-server.listen(8080, function () {
-    console.log('%s listening at %s', server.name, server.url);
-});
-
 // definindo um ponto de entrada do sistema a partir de um arquivo estático (index.html)
 server.get('/*.*', restify.plugins.serveStatic({
     directory: './dist',
     default: 'index.html'
 }));
+
+const port = process.env.PORT || 3000;
+server.listen(port, function () {
+    console.log(`servidor escutando porta ${port}`);
+});
